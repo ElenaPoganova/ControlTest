@@ -11,3 +11,18 @@ void InputArray(string[] array1, string[] array2)
         }
     }
 }
+
+void ResultArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+Console.Clear();
+string[] array1 = new string[4] {"hello", "2", "world", ":-)"}; 
+string[] array2 = new string[array1.Length];
+InputArray(array1, array2);
+ResultArray(array2);
